@@ -1,5 +1,9 @@
 @import 'styles/variables.scss';
 
-.App {
-  @include fontTitle(normal, 600, 24px, 17px);
+.app {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1920px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
