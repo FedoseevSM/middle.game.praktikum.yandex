@@ -7,7 +7,7 @@ export const createClientAndConnect = async (): Promise<Client | null> => {
   try {
     const client = new Client({
       user: POSTGRES_USER,
-      host: 'localhost',
+      host: 'postgresql',
       database: POSTGRES_DB,
       password: POSTGRES_PASSWORD,
       port: Number(POSTGRES_PORT),
