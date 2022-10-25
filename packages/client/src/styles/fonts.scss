@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'PixelDigivolve';
+  src: local('PixelDigivolve'),
+    url(./fonts/pixeldigivolvecyrillic.woff) format('woff'),
+    url(./fonts/pixeldigivolvecyrillic.woff2) format('woff2'),
+    url(./fonts/pixeldigivolvecyrillic.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Frijole';
+  src: local('Frijole'), url(./fonts/Frijole-Regular.woff) format('woff'),
+    url(./fonts/Frijole-Regular.woff2) format('woff2'),
+    url(./fonts/Frijole-Regular.ttf) format('truetype');
+}
