@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import './App.scss'
+import styles from './App.module.scss'
 
 function App() {
   useEffect(() => {
@@ -12,7 +12,7 @@ function App() {
 
     fetchServerData()
   }, [])
-  return <div className="app">Вот тут будет жить ваше приложение :)</div>
+  return <div className={styles.app}>Вот тут будет жить ваше приложение :)</div>
 }
 
 export default App
