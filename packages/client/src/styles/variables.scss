@@ -1,0 +1,15 @@
+@mixin fontTitle($style, $weight, $size, $height) {
+  font-family: 'Frijole';
+  font-weight: $weight;
+  font-style: $style;
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin fontText($style, $weight, $size, $height) {
+  font-family: 'PixelDigivolve';
+  font-weight: $weight;
+  font-style: $style;
+  font-size: $size;
+  line-height: $height;
+}
