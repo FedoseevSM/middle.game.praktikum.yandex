@@ -6,7 +6,6 @@ import ErrorPage404 from './pages/404';
 import ErrorPage500 from './pages/500';
 
 import App from './App'
-import LoginPage from './pages/Login/LoginPage'
 import './index.module.scss'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
