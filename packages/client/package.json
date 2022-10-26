@@ -1,7 +1,6 @@
 {
   "name": "client",
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -11,6 +10,7 @@
     "test": "jest ./"
   },
   "dependencies": {
+    "classnames": "2.3.1",
     "dotenv": "16.0.2",
     "eslint-config-prettier": "8.5.0",
     "prettier": "2.7.1",

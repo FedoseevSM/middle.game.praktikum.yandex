@@ -6,13 +6,14 @@ import ErrorPage404 from './pages/404';
 import ErrorPage500 from './pages/500';
 
 import App from './App'
+import LoginPage from './pages/Login/LoginPage'
 import './index.module.scss'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />} />
+      <Route path="/" element={<App/> } />
       <Route path="/500" element={<ErrorPage500 />} />
       <Route path="*" element={<ErrorPage404 />} />
     </Routes>
