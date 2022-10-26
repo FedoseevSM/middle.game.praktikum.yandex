@@ -9,7 +9,7 @@ const props = {
 function ErrorPage404() {
   return (
     <EmptyLayout>
-      <div className={styles.app}>
+      <div>
         <h1>{props.title}</h1>
         <h2>{props.description}</h2>
       </div>

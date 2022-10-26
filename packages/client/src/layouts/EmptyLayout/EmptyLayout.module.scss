@@ -1,10 +1,15 @@
 @import '../../index.module.scss';
 
-.app {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1920px;
-  padding-right: 10px;
-  padding-left: 10px;
+.wrapped {
+  font-family: 'PixelDigivolve';
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: $bg-color-main;
+}
+.inner {
+  display: grid;
+  gap: 30px;
 }
