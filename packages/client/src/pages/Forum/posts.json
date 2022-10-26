@@ -1,0 +1,26 @@
+[
+    {
+        "topic": "HELP ME!",
+        "description": "Topic description",
+        "author": "user_1",
+        "date": "25/10/2022 12 : 20",
+        "comments": [1, 2, 3],
+        "views": 74
+    },
+    {
+        "topic": "HELP ME!",
+        "description": "Topic description",
+        "author": "user_1",
+        "date": "25/10/2022 12 : 20",
+        "comments": [1, 2, 3],
+        "views": 74
+    },
+    {
+        "topic": "HELP ME!",
+        "description": "Topic description",
+        "author": "user_1",
+        "date": "25/10/2022 12 : 20",
+        "comments": [1, 2, 3],
+        "views": 74
+    }
+]
