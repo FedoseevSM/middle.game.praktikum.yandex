@@ -1,7 +1,6 @@
 {
   "name": "client",
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -11,11 +10,13 @@
     "test": "jest ./"
   },
   "dependencies": {
+    "classnames": "^2.3.1",
     "dotenv": "16.0.2",
     "eslint-config-prettier": "8.5.0",
     "prettier": "2.7.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-router-dom": "^5.3.0",
     "sass": "1.55.0"
   },
   "devDependencies": {

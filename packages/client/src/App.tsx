@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import styles from './App.module.scss'
+import LoginPage from './pages/Login/LoginPage'
 
 function App() {
   useEffect(() => {
@@ -12,6 +13,7 @@ function App() {
 
     fetchServerData()
   }, [])
+<<<<<<< HEAD
   return (
     <div className={styles.app}>
       <div className={styles.wrapper}>
@@ -19,6 +21,9 @@ function App() {
       </div>
     </div>
   )
+=======
+  return <div className={styles.app}>Вот тут будет жить ваше приложение :)<LoginPage/></div>
+>>>>>>> added the layout of the login page
 }
 
 export default App
