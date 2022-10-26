@@ -12,7 +12,13 @@ function App() {
 
     fetchServerData()
   }, [])
-  return <div className={styles.app}>Вот тут будет жить ваше приложение :)</div>
+  return (
+    <div className={styles.app}>
+      <div className={styles.wrapper}>
+        Вот тут будет жить ваше приложение :)
+      </div>
+    </div>
+  )
 }
 
 export default App
