@@ -1,0 +1,26 @@
+.block {
+    padding: 8px 16px;
+    width: 100%;
+    background: rgba(24, 27, 34, 0.7);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-flow: row;
+    flex-wrap: 'wrap';
+    gap: 16px;
+    color: white;
+}
+
+.block_column {
+    padding: 8px;
+}
+
+.block_topic {
+    flex: 1;
+}
+
+.block_author {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    gap: 8px;
+}
