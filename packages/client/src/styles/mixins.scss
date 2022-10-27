@@ -13,3 +13,11 @@
   font-size: $size;
   line-height: $height;
 }
+
+@mixin fontSecondaryText($style, $weight, $size, $height) {
+  font-family: 'Roboto';
+  font-weight: $weight;
+  font-style: $style;
+  font-size: $size;
+  line-height: $height;
+}

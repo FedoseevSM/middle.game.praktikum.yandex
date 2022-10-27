@@ -1,5 +1,10 @@
+@import 'src/index.module.scss';
+
 .block {
+    @include fontSecondaryText(normal, 400, 12px, 20px); 
     width: 50vw;  
+    color: $text-secondary;
+    padding: 20px 0px;
 }
 
 .block_button {
@@ -23,7 +28,8 @@
 }
 
 .block_footer {
-    color: white;
+    @include fontTitle(normal, 400, 14px, 20px);   
+    color: $text-primary;
     width: 100%;
     text-align: center;
 }

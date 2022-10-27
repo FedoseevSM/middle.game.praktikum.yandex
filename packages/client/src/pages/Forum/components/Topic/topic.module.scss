@@ -1,0 +1,53 @@
+@import 'src/index.module.scss';
+
+.topic {
+    flex: 1;
+
+    .title {
+        @include fontTitle(normal, 400, 14px, 20px);
+        color: $text-primary;
+    }
+
+    .author {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+}
+
+.comments {
+    width: 15%;
+    display: flex;
+    flex-flow: column;
+
+    .title {
+        text-align: center;
+    }
+
+    .count {
+        @include fontSecondaryText(normal, 600, 14px, 20px);
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.views {
+    width: 10%;
+    display: flex;
+    flex-flow: column;
+
+    .title {
+        text-align: center;
+    }
+
+    .count {
+        @include fontSecondaryText(normal, 600, 14px, 20px);
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
