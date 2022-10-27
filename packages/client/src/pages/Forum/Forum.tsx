@@ -3,7 +3,7 @@ import Button from './components/Button/Button';
 import CreateTopic from './components/CreateTopic/CreateTopic';
 import Topic from './components/Topic/Topic';
 import styles from './forum.module.scss'
-import topics from './topics.json'
+import topics from '../../static/topics.json'
 
 const Forum = () => {
     const [open, setOpen] = useState(false);

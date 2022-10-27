@@ -15,7 +15,7 @@ function App() {
   }, [])
   return (
     <BackgroundLayout>
-      <div><Forum /></div>
+      <div>Вот тут будет жить ваше приложение :)</div>
     </BackgroundLayout>
   )
 }
