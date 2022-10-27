@@ -17,6 +17,5 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <Route path="*" element={<ErrorPage404 />} />
     </Routes>
     </BrowserRouter>
-    <App/> 
   </React.StrictMode>
 )
