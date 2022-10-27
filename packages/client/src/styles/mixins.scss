@@ -13,3 +13,54 @@
   font-size: $size;
   line-height: $height;
 }
+
+@mixin tn {
+  @media(max-width: 383px) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media(max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin xxs {
+  @media(max-width: 479px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media(max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media(max-width: 991px) {
+    @content;
+  }
+}
+@mixin sm {
+  @media(max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin h-center-content {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin font-face($font, $color, $letterSpacing: 0px) {
+  font: $font;
+  color: $color;
+  letter-spacing: $letterSpacing;
+}
