@@ -1,7 +1,6 @@
 @import 'src/index.module.scss';
 
 .topic {
-    flex: 1;
     display: flex;
     flex-flow: row;
     margin-top: 10px;
@@ -21,4 +20,5 @@
 
 .description {
     display: flex;
+    flex: 1;
 }
