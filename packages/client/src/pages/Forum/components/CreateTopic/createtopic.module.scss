@@ -1,0 +1,24 @@
+@import 'src/index.module.scss';
+
+.topic {
+    flex: 1;
+    display: flex;
+    flex-flow: row;
+    margin-top: 10px;
+
+    .title {
+        @include fontTitle(normal, 400, 14px, 20px);
+        color: $text-primary;
+        margin: 5px 10px;
+    }
+}
+
+.title {
+    @include fontTitle(normal, 400, 14px, 20px);
+    color: $text-primary;
+    margin: 10px 10px 0px 10px;
+}
+
+.description {
+    display: flex;
+}

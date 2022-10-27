@@ -1,6 +1,6 @@
 [
     {
-        "topic": "HELP ME!",
+        "title": "HELP ME!",
         "description": "Topic description",
         "author": "user_1",
         "date": "25/10/2022 12 : 20",
@@ -8,7 +8,7 @@
         "views": 74
     },
     {
-        "topic": "HELP ME!",
+        "title": "HELP ME!",
         "description": "Topic description",
         "author": "user_1",
         "date": "25/10/2022 12 : 20",
@@ -16,7 +16,7 @@
         "views": 74
     },
     {
-        "topic": "HELP ME!",
+        "title": "HELP ME!",
         "description": "Topic description",
         "author": "user_1",
         "date": "25/10/2022 12 : 20",

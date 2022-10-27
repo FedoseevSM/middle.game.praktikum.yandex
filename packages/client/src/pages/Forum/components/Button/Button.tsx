@@ -1,13 +1,13 @@
 import React from 'react';
-import styles from './button.module.css'
+import styles from './button.module.scss'
 
 const Button = (props: any) => {
-    const {text, width} = props;
+    const { text, width, callback } = props;
 
     return (
-        <div className={styles.block} style={{width: width}}>
+        <button className={styles.block} style={{ width: width }} onClick={callback}>
             {text}
-        </div>
+        </button>
     );
 };
 

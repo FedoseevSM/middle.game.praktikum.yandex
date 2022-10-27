@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import BackgroundLayout from './layouts/BackgroundLayout'
+import Forum from './pages/Forum/Forum'
 
 function App() {
   useEffect(() => {
@@ -14,7 +15,7 @@ function App() {
   }, [])
   return (
     <BackgroundLayout>
-      <div>Вот тут будет жить ваше приложение :)</div>
+      <div><Forum /></div>
     </BackgroundLayout>
   )
 }

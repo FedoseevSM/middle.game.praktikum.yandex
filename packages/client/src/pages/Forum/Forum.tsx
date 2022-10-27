@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from './components/Button/Button';
-import Post from './components/Post/Post';
-import styles from './forum.module.css'
-import posts from './posts.json'
+import CreateTopic from './components/CreateTopic/CreateTopic';
+import Topic from './components/Topic/Topic';
+import styles from './forum.module.scss'
+import topics from './topics.json'
 
 const Forum = () => {
+    const [open, setOpen] = useState(false);
+
+    const newTopic = () => {
+        setOpen(!open);
+    }
+
     return (
         <div className={styles.block}>
             <div className={styles.block_button}>
@@ -12,15 +19,22 @@ const Forum = () => {
                     <Button text='GO BACK' width='100%' />
                     <Button text='PLAY' width='100%' />
                 </div>
-                <Button text='POST NEW TOPIC' width='100%' />
+                <Button text='POST NEW TOPIC' width='100%' callback={newTopic} />
             </div>
             <div className={styles.block_posts}>
-            {posts.map((post) => {
-                return <Post post={post}/>
-            })}
-            <div className={styles.block_footer}>
-                1, 2, 3, 4, 5 ...
-            </div>
+                {
+                    open ?
+                        <CreateTopic />
+                        :
+                        <>
+                            {topics.map((topic, index) => {
+                                return <Topic key={index} topic={topic} />
+                            })}
+                            <div className={styles.block_footer}>
+                                1, 2, 3, 4, 5 ...
+                            </div>
+                        </>
+                }
             </div>
         </div>
     );
