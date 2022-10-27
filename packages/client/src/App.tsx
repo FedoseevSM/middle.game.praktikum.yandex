@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import styles from './App.module.scss'
-import LoginPage from './pages/Login/LoginPage'
+import LoginPage from './pages/LoginPage'
 
 function App() {
   useEffect(() => {

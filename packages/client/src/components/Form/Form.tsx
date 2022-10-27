@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../pages/Login/LoginPage.module.scss';
+import styles from '../../pages/LoginPage/LoginPage.module.scss';
 import { Props } from './types';
 
 export const Form: React.FC<Props> = ({

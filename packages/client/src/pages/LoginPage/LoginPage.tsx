@@ -5,7 +5,7 @@ import Button from '../../components/Button';
 import Form from '../../components/Form';
 import styles from './LoginPage.module.scss';
   // 
-export default function LoginPage() {
+const LoginPage: React.FC = (): JSX.Element => {
   return (
     <div className={cn(styles.form_root, 'login-page')}>
       <Form
@@ -44,3 +44,4 @@ export default function LoginPage() {
 }
 
 
+export default LoginPage;
