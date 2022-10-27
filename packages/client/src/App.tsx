@@ -17,7 +17,6 @@ function App() {
     <div className={styles.app}>
       <div className={styles.wrapper}>
         Вот тут будет жить ваше приложение :)
-        <LoginPage/>
       </div>
     </div>
   )

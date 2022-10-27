@@ -14,7 +14,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<App/> } />
-      <Route path="/" element={<LoginPage/> } />
+      <Route path="/login" element={<LoginPage/> } />
       <Route path="/500" element={<ErrorPage500 />} />
       <Route path="*" element={<ErrorPage404 />} />
     </Routes>
