@@ -6,11 +6,6 @@
   z-index: 100;
 }
 
-.helper {
-  background-color: $main_input_text_color;
-  height: 1020px;
-  position: relative;
-}
 
 .decorator {
   width: 1941px;
@@ -28,10 +23,11 @@
   background-color: $main_block_gb_color;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.24705882352941178);
   width: 619px;
-  height: 601px;
-  position: absolute;
-  top: 270px;
-  right: 650px;
+
+    /* height: 601px; */
+    /* position: absolute; */
+    /* top: 270px; */
+    /* right: 650px;*/
 }
 
 .form_group {
@@ -235,8 +231,7 @@
   color: $main_logo_text_color;
   text-align: center;
   letter-spacing: 0px;
-  width: 1079px;
-  height: 212px;
+
   @include lg {
     font-size: 53px;
     text-align: center;
@@ -257,6 +252,6 @@
     font-size: 31px;
   }
   position: absolute;
-  top: 165px;
-  right: 420px;
+  margin-top: -104px;
+  margin-left: 35px;
 }

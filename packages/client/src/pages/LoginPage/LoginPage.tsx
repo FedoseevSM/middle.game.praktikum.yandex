@@ -11,7 +11,12 @@ const LoginPage: React.FC = (): JSX.Element => {
     <div className={stylesApp.app}>
       <div className={stylesApp.wrapper}>
         <div className={styles.form_root}>
-          <Form
+            <h1 className={styles.form_logo_title}>
+              {'Huggy Wuggy'}
+              <br />
+              {'& Kissy Missy'}
+            </h1> 
+            <Form
             actions={[
                         <div className={styles.form_buttons}>
                           <div className={styles.form_button_box}>
@@ -25,6 +30,7 @@ const LoginPage: React.FC = (): JSX.Element => {
                         </div>
             ]}
           >
+
             <div className={styles.form_inputs}>
               <h4 className={styles.form_login_input_title}>{'Login'}</h4>
               <Input
@@ -37,11 +43,7 @@ const LoginPage: React.FC = (): JSX.Element => {
               <a href="resetpassword" className={styles.form_pass_reset_link}>{'forgot your password?'}</a>
             </div>
           </Form>    
-          <h1 className={styles.form_logo_title}>
-            {'Huggy Wuggy'}
-            <br />
-            {'& Kissy Missy'}
-          </h1>
+
         </div>
       </div>
     </div>  

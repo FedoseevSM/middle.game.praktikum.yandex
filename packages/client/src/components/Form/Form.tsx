@@ -8,9 +8,7 @@ export const Form: React.FC<Props> = ({
 
 }: Props): JSX.Element => (
   <form
-    className=""
   >
-    <div className={styles.helper} />
     <div className={styles.form_main_block}>
       <div className={styles.form_group}>
         <div className={styles.form_inputs_buttons}>
