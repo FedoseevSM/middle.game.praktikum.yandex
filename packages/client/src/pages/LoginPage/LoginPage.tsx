@@ -4,11 +4,12 @@ import Input from '../../components/Input';
 import Button from '../../components/Button';
 import Form from '../../components/Form';
 import styles from './LoginPage.module.scss';
-  // 
+import stylesApp from '../../App.module.scss';
+
 const LoginPage: React.FC = (): JSX.Element => {
   return (
-    <div className={styles.app}>
-      <div className={styles.wrapper}>
+    <div className={stylesApp.app}>
+      <div className={stylesApp.wrapper}>
         <div className={styles.form_root}>
           <Form
             actions={[
