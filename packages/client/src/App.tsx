@@ -16,12 +16,11 @@ function App() {
   return (
     <div className={styles.app}>
       <div className={styles.wrapper}>
-        {/* Вот тут будет жить ваше приложение :) */}
+        Вот тут будет жить ваше приложение :)
         <LoginPage/>
       </div>
     </div>
   )
-  // return <div className={styles.app}>Вот тут будет жить ваше приложение :)<LoginPage/></div>
 }
 
 export default App
