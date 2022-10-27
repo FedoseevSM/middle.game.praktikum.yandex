@@ -1,12 +1,12 @@
 @use "utils" as *;
 
-$color_type_0: rgb(251, 55, 255);
-$color_type_1: rgb(255, 255, 255);
-$color_type_2: rgb(55, 68, 110);
-$color_type_3: rgba(24, 27, 34, 0.49);
-$color_type_4: rgba(24, 27, 34, 0.698);
+$main_logo_text_color: rgb(251, 55, 255);
+$main_input_text_color: rgb(255, 255, 255);
+$main_input_bg_color: rgb(55, 68, 110);
+$main_block_gb_color: rgba(24, 27, 34, 0.49);
 
-$border_type_0: 3px solid rgb(0, 0, 0);
+
+$main_button_border_color: 3px solid rgb(0, 0, 0);
 
 $font_type_0: 400 60px/1.16 "Frijole", Helvetica, Arial, serif;
 $font_type_1: 400 37px/1.2 "PixelDigivolve", Helvetica, Arial, serif;
@@ -17,11 +17,13 @@ $font_type_2: 400 18px/1.2 "Frijole", Helvetica, Arial, serif;
   position: relative;
   overflow: hidden;
 }
+
 .helper {
-  background-color: $color_type_1;
+  background-color: $main_input_text_color;
   height: 1020px;
   position: relative;
 }
+
 .decorator {
   width: 1941px;
   height: auto;
@@ -32,9 +34,10 @@ $font_type_2: 400 18px/1.2 "Frijole", Helvetica, Arial, serif;
   top: -98px;
   left: -21px;
 }
+
 .form_main_block {
   @include flex-column;
-  background-color: $color_type_3;
+  background-color: $main_block_gb_color;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.24705882352941178);
   width: 619px;
   height: 601px;
@@ -42,6 +45,7 @@ $font_type_2: 400 18px/1.2 "Frijole", Helvetica, Arial, serif;
   top: 270px;
   right: 650px;
 }
+
 .form_group {
   @include flex-column;
   width: 83.36%;
@@ -58,11 +62,13 @@ $font_type_2: 400 18px/1.2 "Frijole", Helvetica, Arial, serif;
     width: 92.23%;
   }
 }
+
 .form_inputs_buttons {
   @include flex-column;
   position: relative;
   flex-grow: 1;
 }
+
 .form_inputs {
   @include flex-column;
   position: relative;
@@ -71,8 +77,9 @@ $font_type_2: 400 18px/1.2 "Frijole", Helvetica, Arial, serif;
     margin: 0px 0px 0px 5px;
   }
 }
+
 .form_login_input_title {
-  @include font-face($font_type_2, $color_type_1, 0px);
+  @include font-face($font_type_2, $main_input_text_color, 0px);
   @include lg {
     font-size: 17px;
     text-align: left;
@@ -88,15 +95,17 @@ $font_type_2: 400 18px/1.2 "Frijole", Helvetica, Arial, serif;
   }
   position: relative;
 }
+
 .form_login_input {
-  background-color: $color_type_2;
-  border: $border_type_0;
+  background-color: $main_input_bg_color;
+  border: $main_button_border_color;
   height: 44px;
   position: relative;
   margin: 8px 0px 0px;
 }
+
 .form_pass_input_title {
-  @include font-face($font_type_2, $color_type_1, 0px);
+  @include font-face($font_type_2, $main_input_text_color, 0px);
   @include lg {
     font-size: 17px;
     text-align: left;
@@ -113,20 +122,21 @@ $font_type_2: 400 18px/1.2 "Frijole", Helvetica, Arial, serif;
   position: relative;
   margin: 22px 0px 0px;
 }
+
 .form_pass_input {
-  background-color: $color_type_2;
-  border: $border_type_0;
+  background-color: $main_input_bg_color;
+  border: $main_button_border_color;
   height: 44px;
   position: relative;
   margin: 7px 0px 0px;
 }
+
 .form_pass_reset_link {
   display: flex;
   justify-content: flex-end;
   font: $font_type_2;
-  color: $color_type_1;
+  color: $main_input_text_color;
   text-align: right;
-  text-decoration: none;
   letter-spacing: 0px;
   width: 63.62%;
   @include lg {
@@ -145,19 +155,22 @@ $font_type_2: 400 18px/1.2 "Frijole", Helvetica, Arial, serif;
   position: relative;
   margin: 15px 0% 0px 36.38%;
 }
+
 .form_buttons {
   @include flex-column;
   position: relative;
   margin: 52px 0px 0px;
 }
+
 .form_button_box {
   @include flex-column;
   height: 84px;
   position: relative;
 }
+
 .form_button {
-  background-color: $color_type_2;
-  border: $border_type_0;
+  background-color: $main_input_bg_color;
+  border: $main_button_border_color;
   height: 84px;
   position: absolute;
   top: 0px;
@@ -165,10 +178,11 @@ $font_type_2: 400 18px/1.2 "Frijole", Helvetica, Arial, serif;
   right: 0px;
   cursor: pointer;
 }
+
 .login_button_title {
   @include h-center-content;
   font: $font_type_1;
-  color: $color_type_1;
+  color: $main_input_text_color;
   text-align: center;
   letter-spacing: 0px;
   width: 63.37%;
@@ -199,12 +213,12 @@ $font_type_2: 400 18px/1.2 "Frijole", Helvetica, Arial, serif;
   right: 0px;
   margin: 0px auto;
 }
+
 .form_sign_in_link {
   @include h-center-content;
   font: $font_type_2;
-  color: $color_type_1;
+  color: $main_input_text_color;
   text-align: center;
-  text-decoration: none;
   letter-spacing: 0px;
   width: 63.37%;
   @include lg {
@@ -223,40 +237,11 @@ $font_type_2: 400 18px/1.2 "Frijole", Helvetica, Arial, serif;
   position: relative;
   margin: 25px 16.28% 0px 20.35%;
 }
-.decorator2 {
-  width: 808px;
-  height: auto;
-  vertical-align: top;
-  object-fit: contain;
-  object-position: center top;
-  position: absolute;
-  top: -347px;
-  left: -42px;
-}
-.decorator1 {
-  width: 1030px;
-  height: auto;
-  vertical-align: top;
-  object-fit: contain;
-  object-position: center top;
-  position: absolute;
-  bottom: -301px;
-  right: -81px;
-}
-.box1 {
-  background-color: $color_type_4;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.24705882352941178);
-  width: 1920px;
-  height: 1038px;
-  opacity: 0.69;
-  position: absolute;
-  top: -18px;
-  right: 0px;
-}
+
 .form_logo_title {
   @include h-center-content;
   font: $font_type_0;
-  color: $color_type_0;
+  color: $main_logo_text_color;
   text-align: center;
   letter-spacing: 0px;
   width: 1079px;
