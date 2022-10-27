@@ -1,21 +1,9 @@
-@use "utils" as *;
-
-$main_logo_text_color: rgb(251, 55, 255);
-$main_input_text_color: rgb(255, 255, 255);
-$main_input_bg_color: rgb(55, 68, 110);
-$main_block_gb_color: rgba(24, 27, 34, 0.49);
-
-
-$main_button_border_color: 3px solid rgb(0, 0, 0);
-
-$font_type_0: 400 60px/1.16 "Frijole", Helvetica, Arial, serif;
-$font_type_1: 400 37px/1.2 "PixelDigivolve", Helvetica, Arial, serif;
-$font_type_2: 400 18px/1.2 "Frijole", Helvetica, Arial, serif;
+@import '../../index.module.scss';
 
 .form_root {
   @include flex-column;
-  position: relative;
   overflow: hidden;
+  z-index: 100;
 }
 
 .helper {
@@ -79,7 +67,7 @@ $font_type_2: 400 18px/1.2 "Frijole", Helvetica, Arial, serif;
 }
 
 .form_login_input_title {
-  @include font-face($font_type_2, $main_input_text_color, 0px);
+  @include font-face($font_type_Frijole_400_18_px, $main_input_text_color, 0px);
   @include lg {
     font-size: 17px;
     text-align: left;
@@ -97,15 +85,21 @@ $font_type_2: 400 18px/1.2 "Frijole", Helvetica, Arial, serif;
 }
 
 .form_login_input {
+  margin: 8px 0px 0px;
+}
+
+.form_input{
   background-color: $main_input_bg_color;
   border: $main_button_border_color;
   height: 44px;
   position: relative;
-  margin: 8px 0px 0px;
+  font-size: 32px;
+  color: white;
+  font-family: 'PixelDigivolve';
 }
 
 .form_pass_input_title {
-  @include font-face($font_type_2, $main_input_text_color, 0px);
+  @include font-face($font_type_Frijole_400_18_px, $main_input_text_color, 0px);
   @include lg {
     font-size: 17px;
     text-align: left;
@@ -124,17 +118,13 @@ $font_type_2: 400 18px/1.2 "Frijole", Helvetica, Arial, serif;
 }
 
 .form_pass_input {
-  background-color: $main_input_bg_color;
-  border: $main_button_border_color;
-  height: 44px;
-  position: relative;
   margin: 7px 0px 0px;
 }
 
 .form_pass_reset_link {
   display: flex;
   justify-content: flex-end;
-  font: $font_type_2;
+  font: $font_type_Frijole_400_18_px;
   color: $main_input_text_color;
   text-align: right;
   letter-spacing: 0px;
@@ -177,11 +167,12 @@ $font_type_2: 400 18px/1.2 "Frijole", Helvetica, Arial, serif;
   left: 0px;
   right: 0px;
   cursor: pointer;
+  box-shadow: inset -6px 0px 2px #222A5C, inset 6px 0px 4px #222A5C, inset 0px -6px 4px #38002C, inset 0px 8px 2px rgba(255, 255, 255, 0.46);
 }
 
 .login_button_title {
   @include h-center-content;
-  font: $font_type_1;
+  font: $font_type_PixelDigivolve_400_37_px;
   color: $main_input_text_color;
   text-align: center;
   letter-spacing: 0px;
@@ -216,7 +207,7 @@ $font_type_2: 400 18px/1.2 "Frijole", Helvetica, Arial, serif;
 
 .form_sign_in_link {
   @include h-center-content;
-  font: $font_type_2;
+  font: $font_type_Frijole_400_18_px;
   color: $main_input_text_color;
   text-align: center;
   letter-spacing: 0px;
@@ -240,7 +231,7 @@ $font_type_2: 400 18px/1.2 "Frijole", Helvetica, Arial, serif;
 
 .form_logo_title {
   @include h-center-content;
-  font: $font_type_0;
+  font: $font_type_Frijole_400_60_px;
   color: $main_logo_text_color;
   text-align: center;
   letter-spacing: 0px;

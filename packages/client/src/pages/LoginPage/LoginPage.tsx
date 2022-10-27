@@ -7,7 +7,7 @@ import styles from './LoginPage.module.scss';
   // 
 const LoginPage: React.FC = (): JSX.Element => {
   return (
-    <div className={cn(styles.form_root, 'login-page')}>
+    <div className={styles.form_root}>
       <Form
         actions={[
                     <div className={styles.form_buttons}>
@@ -25,11 +25,11 @@ const LoginPage: React.FC = (): JSX.Element => {
         <div className={styles.form_inputs}>
           <h4 className={styles.form_login_input_title}>{'Login'}</h4>
           <Input
-          className={styles.form_login_input}       
+          className={cn(styles.form_login_input, styles.form_input)}       
           required/>
           <h4  className={styles.form_pass_input_title}>{'Password'}</h4>
           <Input type='password'
-          className={styles.form_pass_input}    
+          className={cn(styles.form_pass_input, styles.form_input)}   
           required/>
           <a href="resetpassword" className={styles.form_pass_reset_link}>{'forgot your password?'}</a>
         </div>
