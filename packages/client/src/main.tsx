@@ -6,6 +6,7 @@ import ErrorPage404 from './pages/404'
 import ErrorPage500 from './pages/500'
 
 import App from './App'
+import './styles/reset.scss'
 import 'normalize.css'
 import './index.module.scss'
 
