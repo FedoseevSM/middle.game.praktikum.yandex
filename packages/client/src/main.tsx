@@ -7,12 +7,14 @@ import ErrorPage500 from './pages/500';
 
 import App from './App'
 import './index.module.scss'
+import LoginPage from './pages/LoginPage';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<App/> } />
+      <Route path="/" element={<LoginPage/> } />
       <Route path="/500" element={<ErrorPage500 />} />
       <Route path="*" element={<ErrorPage404 />} />
     </Routes>
