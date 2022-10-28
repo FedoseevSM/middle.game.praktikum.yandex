@@ -1,6 +1,5 @@
 import { useEffect } from 'react'
-import styles from './App.module.scss'
-import LoginPage from './pages/LoginPage'
+import BackgroundLayout from './layouts/BackgroundLayout'
 
 function App() {
   useEffect(() => {
@@ -14,11 +13,9 @@ function App() {
     fetchServerData()
   }, [])
   return (
-    <div className={styles.app}>
-      <div className={styles.wrapper}>
-        Вот тут будет жить ваше приложение :)
-      </div>
-    </div>
+    <BackgroundLayout>
+      <div>Вот тут будет жить ваше приложение :)</div>
+    </BackgroundLayout>
   )
 }
 

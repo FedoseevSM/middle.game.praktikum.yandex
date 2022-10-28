@@ -1,11 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import ErrorPage404 from './pages/404';
-import ErrorPage500 from './pages/500';
+import ErrorPage404 from './pages/404'
+import ErrorPage500 from './pages/500'
 
 import App from './App'
+import './styles/reset.scss'
+import 'normalize.css'
 import './index.module.scss'
 import LoginPage from './pages/LoginPage';
 
