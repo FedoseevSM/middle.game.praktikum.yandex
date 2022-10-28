@@ -14,10 +14,14 @@
     gap: 10px;
 }
 
-.block_button_top {
+.block_buttons_top {
     display: flex;
     flex-flow: row;    
     gap: 10px;
+}
+
+.button_top {
+   width: 100%;
 }
 
 .block_posts {

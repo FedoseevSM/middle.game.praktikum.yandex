@@ -1,0 +1,7 @@
+@import 'src/index.module.scss';
+
+.input {
+    @include fontText(normal, 400, 14px, 16px);
+    background-color: $bg-color-secondary;
+    border: 3px solid #000000;
+}

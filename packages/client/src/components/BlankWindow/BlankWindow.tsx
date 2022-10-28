@@ -1,7 +1,13 @@
-import styles from './BlankWindow.module.scss'
+import styles from './BlankWindow.module.scss';
+import cn from 'classnames';
+import { Props } from './types';
 
-function BlankWindow({ children }: any) {
-  return <div className={styles.app}>{children}</div>
-}
+export const BlankWindow: React.FC<Props> = ({
+  children,
+  className
+}: Props): JSX.Element => (
+  <div className={cn(styles.app, className)}>
+    {children}
+  </div>
+);
 
-export default BlankWindow

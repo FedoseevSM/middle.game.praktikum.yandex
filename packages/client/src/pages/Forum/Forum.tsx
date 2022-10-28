@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import Button from './components/Button/Button';
+// import Button from './components/Button/Button';
+import Button from '../../components/Button';
 import CreateTopic from './components/CreateTopic/CreateTopic';
 import Topic from './components/Topic/Topic';
 import styles from './forum.module.scss'
@@ -15,11 +16,11 @@ const Forum = () => {
     return (
         <div className={styles.block}>
             <div className={styles.block_button}>
-                <div className={styles.block_button_top}>
-                    <Button text='GO BACK' width='100%' />
-                    <Button text='PLAY' width='100%' />
+                <div className={styles.block_buttons_top}>
+                    <Button className={styles.button_top}>GO BACK</Button>
+                    <Button className={styles.button_top}>PLAY</Button>
                 </div>
-                <Button text='POST NEW TOPIC' width='100%' callback={newTopic} />
+                <Button  onClick={newTopic}>POST NEW TOPIC</Button>
             </div>
             <div className={styles.block_posts}>
                 {

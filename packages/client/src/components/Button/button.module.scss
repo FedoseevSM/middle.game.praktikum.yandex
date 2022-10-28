@@ -1,6 +1,6 @@
 @import 'src/index.module.scss';
 
-.block {
+.button {
     @include fontText(normal, 400, 24px, 40px);
     display: flex;
     justify-content: center;

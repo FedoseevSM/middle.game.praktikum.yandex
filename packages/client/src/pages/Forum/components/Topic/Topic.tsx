@@ -1,12 +1,12 @@
 import React from 'react';
-import Card from '../Card/Card';
+import { BlankWindow } from '../../../../components/BlankWindow';
 import styles from './topic.module.scss'
 
 const Topic = (props: any) => {
     const { title, description, author, date, comments, views } = props.topic;
 
     return (
-        <Card>
+        <BlankWindow className={styles.card}>
             <div className={styles.topic}>
                 <div className={styles.title}>{title}</div>
                 <div>{description}</div>
@@ -23,7 +23,7 @@ const Topic = (props: any) => {
                 <div className={styles.title}>views</div>
                 <div className={styles.count}>{views}</div>
             </div>
-        </Card>
+        </BlankWindow>
     );
 };
 
