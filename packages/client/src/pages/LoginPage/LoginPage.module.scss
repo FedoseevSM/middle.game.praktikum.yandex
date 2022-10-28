@@ -7,27 +7,13 @@
 }
 
 
-.decorator {
-  width: 1941px;
-  height: auto;
-  vertical-align: top;
-  object-fit: contain;
-  object-position: center top;
-  position: absolute;
-  top: -98px;
-  left: -21px;
-}
+
 
 .form_main_block {
   @include flex-column;
   background-color: $main_block_gb_color;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.24705882352941178);
   width: 619px;
-
-    /* height: 601px; */
-    /* position: absolute; */
-    /* top: 270px; */
-    /* right: 650px;*/
 }
 
 .form_group {
@@ -252,6 +238,7 @@
     font-size: 31px;
   }
   position: absolute;
-  margin-top: -104px;
-  margin-left: 35px;
+  margin-top: -101px;
+  margin-left: 33px;
 }
+
