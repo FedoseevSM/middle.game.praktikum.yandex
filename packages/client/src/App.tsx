@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import BackgroundLayout from './layouts/BackgroundLayout'
-import Forum from './pages/Forum/Forum'
+import Forum from './pages/Forum'
 
 function App() {
   useEffect(() => {
