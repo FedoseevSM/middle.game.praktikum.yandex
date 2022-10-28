@@ -9,15 +9,17 @@ import App from './App'
 import './styles/reset.scss'
 import 'normalize.css'
 import './index.module.scss'
+import LoginPage from './pages/LoginPage';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/500" element={<ErrorPage500 />} />
-        <Route path="*" element={<ErrorPage404 />} />
-      </Routes>
+    <Routes>
+      <Route path="/" element={<App/> } />
+      <Route path="/login" element={<LoginPage/> } />
+      <Route path="/500" element={<ErrorPage500 />} />
+      <Route path="*" element={<ErrorPage404 />} />
+    </Routes>
     </BrowserRouter>
   </React.StrictMode>
 )

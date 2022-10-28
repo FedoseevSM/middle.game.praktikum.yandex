@@ -1,0 +1,244 @@
+@import '../../index.module.scss';
+
+.form_root {
+  @include flex-column;
+  overflow: hidden;
+  z-index: 100;
+}
+
+
+
+
+.form_main_block {
+  @include flex-column;
+  background-color: $main_block_gb_color;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.24705882352941178);
+  width: 619px;
+}
+
+.form_group {
+  @include flex-column;
+  width: 83.36%;
+  position: relative;
+  flex-grow: 1;
+  margin: 97px auto 69px;
+  @include xs {
+    width: 86.98%;
+  }
+  @include xxs {
+    width: 89.9%;
+  }
+  @include tn {
+    width: 92.23%;
+  }
+}
+
+.form_inputs_buttons {
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+}
+
+.form_inputs {
+  @include flex-column;
+  position: relative;
+  margin: 0px 0px 0px 2px;
+  @include lg {
+    margin: 0px 0px 0px 5px;
+  }
+}
+
+.form_login_input_title {
+  @include font-face($font_type_Frijole_400_18_px, $main_input_text_color, 0px);
+  @include lg {
+    font-size: 17px;
+    text-align: left;
+  }
+  @include md {
+    font-size: 16px;
+  }
+  @include sm {
+    font-size: 15px;
+  }
+  @include xxs {
+    font-size: 14px;
+  }
+  position: relative;
+}
+
+.form_login_input {
+  margin: 8px 0px 0px;
+}
+
+.form_input{
+  background-color: $main_input_bg_color;
+  border: $main_button_border_color;
+  height: 44px;
+  position: relative;
+  font-size: 32px;
+  color: white;
+  font-family: 'PixelDigivolve';
+}
+
+.form_pass_input_title {
+  @include font-face($font_type_Frijole_400_18_px, $main_input_text_color, 0px);
+  @include lg {
+    font-size: 17px;
+    text-align: left;
+  }
+  @include md {
+    font-size: 16px;
+  }
+  @include sm {
+    font-size: 15px;
+  }
+  @include xxs {
+    font-size: 14px;
+  }
+  position: relative;
+  margin: 22px 0px 0px;
+}
+
+.form_pass_input {
+  margin: 7px 0px 0px;
+}
+
+.form_pass_reset_link {
+  display: flex;
+  justify-content: flex-end;
+  font: $font_type_Frijole_400_18_px;
+  color: $main_input_text_color;
+  text-align: right;
+  letter-spacing: 0px;
+  width: 63.62%;
+  @include lg {
+    font-size: 17px;
+    text-align: right;
+  }
+  @include md {
+    font-size: 16px;
+  }
+  @include sm {
+    font-size: 15px;
+  }
+  @include xxs {
+    font-size: 14px;
+  }
+  position: relative;
+  margin: 15px 0% 0px 36.38%;
+}
+
+.form_buttons {
+  @include flex-column;
+  position: relative;
+  margin: 52px 0px 0px;
+}
+
+.form_button_box {
+  @include flex-column;
+  height: 84px;
+  position: relative;
+}
+
+.form_button {
+  background-color: $main_input_bg_color;
+  border: $main_button_border_color;
+  height: 84px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  cursor: pointer;
+  box-shadow: inset -6px 0px 2px #222A5C, inset 6px 0px 4px #222A5C, inset 0px -6px 4px #38002C, inset 0px 8px 2px rgba(255, 255, 255, 0.46);
+}
+
+.login_button_title {
+  @include h-center-content;
+  font: $font_type_PixelDigivolve_400_37_px;
+  color: $main_input_text_color;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 63.37%;
+  @include lg {
+    font-size: 33px;
+    text-align: center;
+  }
+  @include md {
+    font-size: 29px;
+  }
+  @include sm {
+    font-size: 26px;
+  }
+  @include xs {
+    font-size: 24px;
+  }
+  @include xxs {
+    font-size: 23px;
+  }
+  @include tn {
+    font-size: 21px;
+    width: 69.76%;
+  }
+  position: absolute;
+  top: 19px;
+  bottom: 20px;
+  left: 0px;
+  right: 0px;
+  margin: 0px auto;
+}
+
+.form_sign_in_link {
+  @include h-center-content;
+  font: $font_type_Frijole_400_18_px;
+  color: $main_input_text_color;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 63.37%;
+  @include lg {
+    font-size: 17px;
+    text-align: center;
+  }
+  @include md {
+    font-size: 16px;
+  }
+  @include sm {
+    font-size: 15px;
+  }
+  @include xxs {
+    font-size: 14px;
+  }
+  position: relative;
+  margin: 25px 16.28% 0px 20.35%;
+}
+
+.form_logo_title {
+  @include h-center-content;
+  font: $font_type_Frijole_400_60_px;
+  color: $main_logo_text_color;
+  text-align: center;
+  letter-spacing: 0px;
+
+  @include lg {
+    font-size: 53px;
+    text-align: center;
+  }
+  @include md {
+    font-size: 46px;
+  }
+  @include sm {
+    font-size: 39px;
+  }
+  @include xs {
+    font-size: 36px;
+  }
+  @include xxs {
+    font-size: 33px;
+  }
+  @include tn {
+    font-size: 31px;
+  }
+  position: absolute;
+  margin-top: -101px;
+  margin-left: 33px;
+}
+
