@@ -1,0 +1,21 @@
+@import '../../index.module.scss';
+
+.input {
+  background-color: $main_input_bg_color;
+  border: $main_button_border_color;
+  height: 44px;
+  position: relative;
+  font-size: 32px;
+  color: $main_input_text_color;
+  font-family: 'PixelDigivolve';
+}
+
+.input_error {
+  border: 1px solid $main_input_border_error;
+}
+
+.error {
+  @include fontText(normal, 400, 14px, 1.2);
+  margin-top: 5px;
+  color: $main_input_text_color;
+}
