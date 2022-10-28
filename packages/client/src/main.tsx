@@ -17,6 +17,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="/forum" element={<BackgroundLayout><Forum /></BackgroundLayout>} />
         <Route path="/login" element={<BackgroundLayout><LoginPage /></BackgroundLayout>} />
         <Route path="/forum" element={<BackgroundLayout><Forum /></BackgroundLayout>} />
         <Route path="/500" element={<ErrorPage500 />} />
