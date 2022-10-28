@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-import BlankWindow from '../../components/BlankWindow'
+import {BlankWindow} from '../../components/BlankWindow'
 import styles from './EmptyLayout.module.scss'
 
 function EmptyLayout({ children }: any) {

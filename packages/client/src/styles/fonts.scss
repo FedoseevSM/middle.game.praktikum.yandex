@@ -8,7 +8,14 @@
 
 @font-face {
   font-family: 'Frijole';
-  src: local('Frijole'), url(./fonts/Frijole-Regular.woff) format('woff'),
+  src: local('Frijole'), 
+    url(./fonts/Frijole-Regular.woff) format('woff'),
     url(./fonts/Frijole-Regular.woff2) format('woff2'),
     url(./fonts/Frijole-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), 
+    url(./fonts/Roboto-Regular.ttf) format('ttf'),
 }
