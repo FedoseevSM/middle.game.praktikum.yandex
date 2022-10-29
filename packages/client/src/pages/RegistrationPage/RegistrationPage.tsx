@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import cn from 'classnames'
 import { useFormik } from 'formik'
 import Input from '../../components/Input'
@@ -39,9 +40,9 @@ const RegistrationPage: React.FC = (): JSX.Element => {
               </Button>
             </div>
 
-            <a href="signup" className={styles.form_sign_in_link}>
+            <Link to="/login" className={styles.form_sign_in_link}>
               Sign In
-            </a>
+            </Link>
           </div>,
         ]}>
         <div>
