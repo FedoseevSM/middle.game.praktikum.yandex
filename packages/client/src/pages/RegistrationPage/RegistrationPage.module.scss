@@ -5,6 +5,8 @@
   overflow: hidden;
   z-index: 100;
   margin: 100px 0 50px;
+  width: 100%;
+  align-items: center;
 }
 
 .form_input {
@@ -149,16 +151,22 @@
   color: $main_logo_text_color;
   text-align: center;
   letter-spacing: 0px;
+  position: absolute;
+  margin-top: -101px;
+  margin-left: 33px;
 
   @include lg {
     font-size: 53px;
     text-align: center;
+    margin-top: -80px;
   }
   @include md {
     font-size: 46px;
+    margin-top: -60px;
   }
   @include sm {
     font-size: 39px;
+    margin-top: -40px;
   }
   @include xs {
     font-size: 36px;
@@ -169,7 +177,4 @@
   @include tn {
     font-size: 31px;
   }
-  position: absolute;
-  margin-top: -101px;
-  margin-left: 33px;
 }
