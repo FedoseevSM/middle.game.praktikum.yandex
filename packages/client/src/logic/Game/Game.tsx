@@ -1,7 +1,7 @@
 
 const keys:boolean[] = [];
  
-export default class Game_temp {
+export default class Game {
  
     private ctx: CanvasRenderingContext2D;
     private width = 800;
