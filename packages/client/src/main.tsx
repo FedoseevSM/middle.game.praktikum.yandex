@@ -10,16 +10,38 @@ import App from './App'
 import 'normalize.css'
 import './index.module.scss'
 import BackgroundLayout from './layouts/BackgroundLayout'
-import LoginPage from './pages/LoginPage';
+import LoginPage from './pages/LoginPage/LoginPage'
+import RegistrationPage from './pages/RegistrationPage'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/forum" element={<BackgroundLayout><Forum /></BackgroundLayout>} />
-        <Route path="/login" element={<BackgroundLayout><LoginPage /></BackgroundLayout>} />
-        <Route path="/forum" element={<BackgroundLayout><Forum /></BackgroundLayout>} />
+        <Route
+          path="/forum"
+          element={
+            <BackgroundLayout>
+              <Forum />
+            </BackgroundLayout>
+          }
+        />
+        <Route
+          path="/login"
+          element={
+            <BackgroundLayout>
+              <LoginPage />
+            </BackgroundLayout>
+          }
+        />
+        <Route
+          path="/reg"
+          element={
+            <BackgroundLayout>
+              <RegistrationPage />
+            </BackgroundLayout>
+          }
+        />
         <Route path="/500" element={<ErrorPage500 />} />
         <Route path="*" element={<ErrorPage404 />} />
       </Routes>

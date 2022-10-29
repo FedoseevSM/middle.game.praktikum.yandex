@@ -11,7 +11,7 @@ export const Input: React.FC<Props> = ({
   className,
   ...props
 }: Props): JSX.Element => (
-  <div>
+  <div className={styles.input_container}>
     <input
       name={name}
       type={type}

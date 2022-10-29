@@ -1,0 +1,45 @@
+@import 'src/index.module.scss';
+
+.form_main_block {
+  @include flex-column;
+  background-color: $main_block_gb_color;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.24705882352941178);
+  width: 619px;
+}
+.form_group {
+  @include flex-column;
+  width: 83.36%;
+  position: relative;
+  flex-grow: 1;
+  margin: 97px auto 69px;
+  @include xs {
+    width: 86.98%;
+  }
+  @include xxs {
+    width: 89.9%;
+  }
+  @include tn {
+    width: 92.23%;
+  }
+}
+
+.form_inputs_buttons {
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+}
+
+.form_inputs {
+  @include flex-column;
+  position: relative;
+  margin: 0px 0px 0px 2px;
+  @include lg {
+    margin: 0px 0px 0px 5px;
+  }
+}
+
+.form_buttons {
+  @include flex-column;
+  position: relative;
+  margin: 52px 0px 0px;
+}

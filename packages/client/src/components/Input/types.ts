@@ -10,4 +10,5 @@ export interface Props extends InputHTMLAttributes<HTMLInputElement> {
   inputClassName?: string
   showError?: boolean
   error?: string | undefined
+  autoComplete?: string | undefined
 }

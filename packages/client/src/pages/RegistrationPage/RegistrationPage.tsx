@@ -4,18 +4,20 @@ import { useFormik } from 'formik'
 import Input from '../../components/Input'
 import Button from '../../components/Button'
 import Form from '../../components/Form'
-import styles from './LoginPage.module.scss'
+import styles from './RegistrationPage.module.scss'
 
-import { loginSchema } from '../../constants/Schemas'
+import { regSchema } from '../../constants/Schemas'
 
-const LoginPage: React.FC = (): JSX.Element => {
+const RegistrationPage: React.FC = (): JSX.Element => {
   const { values, errors, touched, handleChange, handleSubmit, handleBlur } =
     useFormik({
       initialValues: {
+        email: '',
         login: '',
         password: '',
+        confirmPassword: '',
       },
-      validationSchema: loginSchema,
+      validationSchema: regSchema,
       onSubmit: values => {
         console.log('values', values)
       },
@@ -33,18 +35,28 @@ const LoginPage: React.FC = (): JSX.Element => {
           <div key={0}>
             <div className={styles.form_button_box}>
               <Button className={styles.form_button} type="submit">
-                <h1 className={styles.login_button_title}>Sign in</h1>
+                <h1 className={styles.login_button_title}>Sign Up</h1>
               </Button>
             </div>
 
             <a href="signup" className={styles.form_sign_in_link}>
-              No acc? Sign up
+              Sign In
             </a>
           </div>,
         ]}>
         <div>
-          <h4 className={styles.form_title}>Login</h4>
+          <h4 className={styles.form_title}>Email</h4>
+          <Input
+            name="email"
+            value={values.email}
+            onChange={handleChange}
+            onBlur={handleBlur}
+            className={cn(styles.form_input)}
+            showError={!!errors.email && !!touched.email}
+            error={errors.email}
+          />
 
+          <h4 className={styles.form_title}>Login</h4>
           <Input
             name="login"
             value={values.login}
@@ -54,26 +66,34 @@ const LoginPage: React.FC = (): JSX.Element => {
             showError={!!errors.login && !!touched.login}
             error={errors.login}
           />
-          <h4 className={styles.form_title}>Password</h4>
 
+          <h4 className={styles.form_title}>Password</h4>
           <Input
             name="password"
             type="password"
             value={values.password}
             onChange={handleChange}
             onBlur={handleBlur}
-            className={cn(styles.form_input, styles.form_input_mb0)}
+            className={cn(styles.form_input)}
             showError={!!errors.password && !!touched.password}
             error={errors.password}
           />
 
-          <a href="resetpassword" className={styles.form_pass_reset_link}>
-            forgot your password?
-          </a>
+          <h4 className={styles.form_title}>Password</h4>
+          <Input
+            name="confirmPassword"
+            type="password"
+            value={values.confirmPassword}
+            onChange={handleChange}
+            onBlur={handleBlur}
+            className={cn(styles.form_input, styles.form_input_mb0)}
+            showError={!!errors.confirmPassword && !!touched.confirmPassword}
+            error={errors.confirmPassword}
+          />
         </div>
       </Form>
     </div>
   )
 }
 
-export default LoginPage
+export default RegistrationPage
