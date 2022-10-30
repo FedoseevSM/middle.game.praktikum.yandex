@@ -18,15 +18,11 @@
   }
 }
 
-.button_for_form {
+.regular {
   background-color: $main_input_bg_color;
   border: $main_button_border_color;
   height: 84px;
   cursor: pointer;
   box-shadow: inset -6px 0px 2px #222a5c, inset 6px 0px 4px #222a5c,
     inset 0px -6px 4px #38002c, inset 0px 8px 2px rgba(255, 255, 255, 0.46);
-}
-
-.button_width_100 {
-  width: 100%;
 }

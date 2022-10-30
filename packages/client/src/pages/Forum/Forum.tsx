@@ -17,8 +17,8 @@ const Forum = () => {
     <div className={styles.block}>
       <div className={styles.block_button}>
         <div className={styles.block_buttons_top}>
-          <Button className="button_width_100">GO BACK</Button>
-          <Button className="button_width_100">PLAY</Button>
+          <Button>GO BACK</Button>
+          <Button>PLAY</Button>
         </div>
         <Button onClick={newTopic}>POST NEW TOPIC</Button>
       </div>

@@ -33,7 +33,7 @@ const LoginPage: React.FC = (): JSX.Element => {
         actions={[
           <div key={0}>
             <div className={stylesForm.form_button_box}>
-              <Button className="button_for_form" type="submit">
+              <Button className="regular" type="submit">
                 <h1 className={styles.login_button_title}>Sign in</h1>
               </Button>
             </div>
@@ -51,7 +51,7 @@ const LoginPage: React.FC = (): JSX.Element => {
             value={values.login}
             onChange={handleChange}
             onBlur={handleBlur}
-            className="input_form"
+            className="regular"
             showError={!!errors.login && !!touched.login}
             error={errors.login}
           />
@@ -63,7 +63,7 @@ const LoginPage: React.FC = (): JSX.Element => {
             value={values.password}
             onChange={handleChange}
             onBlur={handleBlur}
-            className="input_form"
+            className="regular"
             showError={!!errors.password && !!touched.password}
             error={errors.password}
           />

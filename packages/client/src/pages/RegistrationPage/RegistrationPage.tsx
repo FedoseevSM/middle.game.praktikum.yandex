@@ -35,7 +35,7 @@ const RegistrationPage: React.FC = (): JSX.Element => {
         actions={[
           <div key={0}>
             <div className={stylesForm.form_button_box}>
-              <Button className="button_for_form" type="submit">
+              <Button className="regular" type="submit">
                 <h1 className={styles.reg_button_title}>Sign Up</h1>
               </Button>
             </div>
@@ -52,7 +52,7 @@ const RegistrationPage: React.FC = (): JSX.Element => {
             value={values.email}
             onChange={handleChange}
             onBlur={handleBlur}
-            className="input_form"
+            className="regular"
             showError={!!errors.email && !!touched.email}
             error={errors.email}
           />
@@ -63,7 +63,7 @@ const RegistrationPage: React.FC = (): JSX.Element => {
             value={values.login}
             onChange={handleChange}
             onBlur={handleBlur}
-            className="input_form"
+            className="regular"
             showError={!!errors.login && !!touched.login}
             error={errors.login}
           />
@@ -75,7 +75,7 @@ const RegistrationPage: React.FC = (): JSX.Element => {
             value={values.password}
             onChange={handleChange}
             onBlur={handleBlur}
-            className="input_form"
+            className="regular"
             showError={!!errors.password && !!touched.password}
             error={errors.password}
           />
@@ -87,7 +87,7 @@ const RegistrationPage: React.FC = (): JSX.Element => {
             value={values.confirmPassword}
             onChange={handleChange}
             onBlur={handleBlur}
-            className="input_form"
+            className="regular"
             showError={!!errors.confirmPassword && !!touched.confirmPassword}
             error={errors.confirmPassword}
           />

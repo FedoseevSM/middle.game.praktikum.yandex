@@ -18,6 +18,9 @@
   display: flex;
   flex-flow: row;
   gap: 10px;
+  button {
+    width: 100%;
+  }
 }
 
 .block_posts {
