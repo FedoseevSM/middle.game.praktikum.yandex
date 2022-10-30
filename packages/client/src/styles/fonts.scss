@@ -1,21 +1,19 @@
 @font-face {
   font-family: 'PixelDigivolve';
   src: local('PixelDigivolve'),
-    url(./fonts/pixeldigivolvecyrillic.woff) format('woff'),
-    url(./fonts/pixeldigivolvecyrillic.woff2) format('woff2'),
-    url(./fonts/pixeldigivolvecyrillic.otf) format('opentype');
+    url(src/fonts/pixeldigivolvecyrillic.woff) format('woff'),
+    url(src/fonts/pixeldigivolvecyrillic.woff2) format('woff2'),
+    url(src/fonts/pixeldigivolvecyrillic.otf) format('opentype');
 }
 
 @font-face {
   font-family: 'Frijole';
-  src: local('Frijole'), 
-    url(./fonts/Frijole-Regular.woff) format('woff'),
-    url(./fonts/Frijole-Regular.woff2) format('woff2'),
-    url(./fonts/Frijole-Regular.ttf) format('truetype');
+  src: local('Frijole'), url(src/fonts/Frijole-Regular.woff) format('woff'),
+    url(src/fonts/Frijole-Regular.woff2) format('woff2'),
+    url(src/fonts/Frijole-Regular.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: local('Roboto'), 
-    url(./fonts/Roboto-Regular.ttf) format('ttf'),
+  src: local('Roboto'), url(src/fonts/Roboto-Regular.ttf) format('ttf');
 }

@@ -1,19 +1,27 @@
-import React from 'react';
-import cn from 'classnames';
-import styles from './input.module.scss'
-
-import { Props } from './types';
+import React from 'react'
+import cn from 'classnames'
+import styles from './Input.module.scss'
+import { Props } from './types'
 
 export const Input: React.FC<Props> = ({
-  required = false,
+  name,
   type = 'text',
-  className = ''
+  showError = false,
+  error,
+  className = '',
+  ...props
 }: Props): JSX.Element => (
-
+  <div className={styles.input_container}>
     <input
-      className={cn(styles.input, className)}
-      required={required}
+      name={name}
       type={type}
+      className={cn(
+        styles.input,
+        styles[className],
+        showError && styles.input_error
+      )}
+      {...props}
     />
-
-);
+    {showError && <p className={styles.error}>{error}</p>}
+  </div>
+)
