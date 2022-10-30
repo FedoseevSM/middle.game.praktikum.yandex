@@ -8,14 +8,18 @@ export const Input: React.FC<Props> = ({
   type = 'text',
   showError = false,
   error,
-  className,
+  className = '',
   ...props
 }: Props): JSX.Element => (
   <div className={styles.input_container}>
     <input
       name={name}
       type={type}
-      className={cn(className, styles.input, showError && styles.input_error)}
+      className={cn(
+        styles.input,
+        styles[className],
+        showError && styles.input_error
+      )}
       {...props}
     />
     {showError && <p className={styles.error}>{error}</p>}

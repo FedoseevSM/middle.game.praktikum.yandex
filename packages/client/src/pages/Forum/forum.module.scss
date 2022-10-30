@@ -1,40 +1,36 @@
 @import 'src/index.module.scss';
 
 .block {
-    @include fontSecondaryText(normal, 400, 12px, 20px); 
-    width: 50vw;  
-    color: $text-secondary;
-    padding: 20px 0px;
+  @include fontSecondaryText(normal, 400, 12px, 20px);
+  width: 50vw;
+  color: $text-secondary;
+  padding: 20px 0px;
 }
 
 .block_button {
-    display: flex;
-    flex-flow: column;
-    margin: 0px 50px;
-    gap: 10px;
+  display: flex;
+  flex-flow: column;
+  margin: 0px 50px;
+  gap: 10px;
 }
 
 .block_buttons_top {
-    display: flex;
-    flex-flow: row;    
-    gap: 10px;
-}
-
-.button_top {
-   width: 100%;
+  display: flex;
+  flex-flow: row;
+  gap: 10px;
 }
 
 .block_posts {
-    display: flex;
-    flex-flow: column;
-    margin-top: 40px;
-    gap: 10px;
-    height: 300px;
+  display: flex;
+  flex-flow: column;
+  margin-top: 40px;
+  gap: 10px;
+  height: 300px;
 }
 
 .block_footer {
-    @include fontTitle(normal, 400, 14px, 20px);   
-    color: $text-primary;
-    width: 100%;
-    text-align: center;
+  @include fontTitle(normal, 400, 14px, 20px);
+  color: $text-primary;
+  width: 100%;
+  text-align: center;
 }
