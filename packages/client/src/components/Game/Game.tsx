@@ -7,6 +7,7 @@ function GameComponent() {
   const game = useRef<Game | null>(null);
 
   useEffect(() => {
+    console.log('game start');
     game.current = new Game(canvas.current as HTMLCanvasElement);
     game.current!.StartAnimating(10);
     
