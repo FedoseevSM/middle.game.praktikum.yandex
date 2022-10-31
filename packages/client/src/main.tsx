@@ -10,8 +10,9 @@ import App from './App'
 import 'normalize.css'
 import './index.module.scss'
 import BackgroundLayout from './layouts/BackgroundLayout'
-import LoginPage from './pages/LoginPage/LoginPage'
 import RegistrationPage from './pages/RegistrationPage'
+import LoginPage from './pages/LoginPage';
+import GameScreen from './pages/GameScreen'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
@@ -44,6 +45,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
         />
         <Route path="/500" element={<ErrorPage500 />} />
         <Route path="*" element={<ErrorPage404 />} />
+        <Route path="/game" element={<BackgroundLayout><GameScreen /></BackgroundLayout>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
