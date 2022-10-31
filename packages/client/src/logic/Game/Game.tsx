@@ -73,7 +73,6 @@ export default class Game {
     StartAnimating(fps:number){ 
         this.fpsInterval = 1000/fps; 
         this.then = Date.now();
-        this.animate();
     }
 
     animate(){
