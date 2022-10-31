@@ -11,8 +11,8 @@ const player = {
 };
 
 const playerSecond = {
-    x: 300,
-    y: 250,
+    x: 250,
+    y: 200,
     width: 40,
     height: 72,
     frameX: 0, 
@@ -20,6 +20,7 @@ const playerSecond = {
     speed: 7, 
     moving: false
 }; 
+
 export default class Game {
  
     private ctx: CanvasRenderingContext2D;
