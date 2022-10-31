@@ -102,7 +102,6 @@ export default class Game {
             this.movePlayer();
             this.handlePlayerFrame();
         }
-        
     }
 
      movePlayer(){
